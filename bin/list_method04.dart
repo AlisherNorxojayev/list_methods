@@ -12,8 +12,9 @@ void main() {
   print(func(2, [1, 2, 3, 4, 5]));
 }
 
-int func(int i, List number) {
-  int n = number[i];
+List<int> func(int i, List number) {
+  List<int> n = [];
+  n.add(number[i]);
   number.remove(i);
   return n;
 }
