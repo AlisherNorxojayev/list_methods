@@ -8,7 +8,7 @@
 */
 
 void main() {
-  print(func(["apple", "pear", "apple", "nok"]));
+  print(func(["apple", "pear", "apple", "apple","apple"]));
 }
 
 int func(List fruits) {
@@ -18,8 +18,9 @@ int func(List fruits) {
     if (fruits[i] == "apple") {
       m += 1;
       i++;
+    } else {
+      i++;
     }
-    i++;
   }
   return m;
 }

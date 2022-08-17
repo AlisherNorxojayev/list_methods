@@ -10,10 +10,10 @@
 */
 
 void main() {
-  print(func(1, "kiwi", ["apple", "banana"]));
+  print(func(['apple', 'banana'], 'kiwi', 1));
 }
 
-List func(int i, String x, List fruits) {
-  fruits.insert(i, x);
-  return fruits;
+List func(List frut, String x, int i) {
+  frut.insert(i, x);
+  return frut;
 }

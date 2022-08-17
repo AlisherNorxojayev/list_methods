@@ -8,7 +8,7 @@
 */
 
 void main() {
-  print(func(["apple", "banana", "apple", "pear"]));
+  print(func(["apple", "apple", "apple", "apple", "pear"]));
 }
 
 List func(List fruits) {
@@ -21,8 +21,9 @@ List func(List fruits) {
       n += 1;
       m.add(i);
       i += 1;
+    } else {
+      i++;
     }
-    i += 1;
   }
   x.add(n);
   x.addAll(m);

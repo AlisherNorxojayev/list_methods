@@ -9,7 +9,7 @@
 */
 
 void main() {
-  print(func(4, [4,7,3,2,8]));
+  print(func(4, [4,7,3,2,1,8]));
 }
 
 List func(int i, List number) {

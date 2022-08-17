@@ -8,14 +8,11 @@
 */
 
 void main() {
-  print(func(["apple", "banana", "apple", "pear"]));
+  print(func(["apple", "apple","apple","kiwi"]));
 }
 
 List func(List fruits) {
-  int i = 0;
-  while (i < fruits.length) {
-    fruits.remove("apple");
-    i++;
+  while (fruits.remove("apple")) {
   }
   return fruits;
 }
