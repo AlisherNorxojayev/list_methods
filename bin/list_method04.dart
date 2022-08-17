@@ -8,4 +8,13 @@
         list: return answer
 */
 
-void main() {}
+void main() {
+  print(func(4, [4,7,3,2,8]));
+}
+
+List func(int i, List number) {
+  int n = 0;
+  List m = [];
+  m.add(number[i]);
+  return m;
+}

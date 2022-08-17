@@ -10,4 +10,15 @@
         list: return answer
 */
 
-void main() {}
+void main() {
+  print(func([6,8,1], [3,5,7]));
+}
+
+List func(List number1, List number2) {
+  List m = [];
+  m.add(number1.last);
+  m.addAll(number2);
+  number1.removeLast();
+  number1.addAll(m);
+  return number1;
+}

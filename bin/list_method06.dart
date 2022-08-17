@@ -7,4 +7,19 @@
         int: return answer
 */
 
-void main() {}
+void main() {
+  print(func(["apple", "pear", "apple", "nok"]));
+}
+
+int func(List fruits) {
+  int i = 0;
+  int m = 0;
+  while (i < fruits.length) {
+    if (fruits[i] == "apple") {
+      m += 1;
+      i++;
+    }
+    i++;
+  }
+  return m;
+}

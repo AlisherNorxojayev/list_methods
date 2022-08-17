@@ -7,4 +7,25 @@
         list: return answer
 */
 
-void main() {}
+void main() {
+  print(func([1, 0, 0, 0, 1, 0, 1, 0]));
+}
+
+List func(List list1) {
+  int i = 0;
+  int o = 0;
+  int n = 0;
+  List m = [];
+  while (i < list1.length) {
+    if (list1[i] == 1) {
+      n += 1;
+      i += 1;
+    } else {
+      o += 1;
+      i += 1;
+    }
+  }
+  m.add(n);
+  m.add(o);
+  return m;
+}
