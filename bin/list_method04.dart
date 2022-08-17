@@ -9,12 +9,11 @@
 */
 
 void main() {
-  print(func(4, [4,7,3,2,1,8]));
+  print(func(2, [1, 2, 3, 4, 5]));
 }
 
-List func(int i, List number) {
-  int n = 0;
-  List m = [];
-  m.add(number[i]);
-  return m;
+int func(int i, List number) {
+  int n = number[i];
+  number.remove(i);
+  return n;
 }
